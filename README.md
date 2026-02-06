@@ -1,124 +1,106 @@
 # 🎬 Movie Explorer
 
-Movie Explorer is a web application built with **React** and **Vite** that allows users to discover, search, and explore movie information using a public movie database API.
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
 
-The project focuses on a clean UI, modern frontend tooling, and client-side routing for a smooth user experience.
+**Movie Explorer** is a modern, responsive web application that allows users to discover, search, and view detailed information about movies. Built with **React** and **Vite**, it leverages the **TMDB API** to provide real-time data on trending films, ratings, and cast details.
 
----
-
-## 📌 Project Overview
-
-Movie Explorer aims to provide an intuitive interface for users to:
-
-- Search movies by title  
-- Browse trending and popular films  
-- View detailed movie information such as title, poster, rating, release date, and synopsis  
-- Navigate seamlessly using client-side routing  
-
-The application is designed to be responsive and works across desktop, tablet, and mobile devices.
+This project demonstrates proficiency in modern frontend development, including client-side routing, asynchronous data fetching, and responsive UI design.
 
 ---
 
 ## 🚀 Features
 
-- **Search Functionality** – Search movies by name  
-- **Movie Listings** – View trending or popular movies on load  
-- **Movie Details Page** – Detailed view with metadata and overview  
-- **Client-Side Routing** – Powered by React Router  
-- **Responsive UI** – Optimized for multiple screen sizes  
-
-> Feature availability may vary depending on the current implementation.
+- **🔍 Dynamic Search:** Real-time movie search functionality by title.
+- **🔥 Trending & Popular:** Automatically fetches and displays trending movies upon loading.
+- **📱 Fully Responsive:** Optimized layout for desktop, tablet, and mobile devices.
+- **⚡ High Performance:** Powered by Vite for lightning-fast HMR (Hot Module Replacement) and optimized builds.
+- **🧭 Client-Side Routing:** Seamless navigation without page reloads using React Router.
 
 ---
 
-## 🧱 Tech Stack
+## 🛠️ Tech Stack
 
-| Layer        | Technology |
-|--------------|------------|
-| UI Framework | React |
-| Build Tool   | Vite |
-| Routing      | React Router |
-| Data Source  | Movie API (TMDB) |
-| Styling      | CSS / Tailwind CSS (if applicable) |
+| Domain | Technologies |
+| :--- | :--- |
+| **Frontend** | React (Hooks, Functional Components) |
+| **Build Tool** | Vite |
+| **Styling** | CSS Modules / Tailwind CSS |
+| **Routing** | React Router DOM |
+| **API** | The Movie Database (TMDB) API |
+| **Deployment** | Render |
 
 ---
 
-## 🗂️ Project Structure
+## 📂 Project Structure
 
 ```text
 movie-explorer/
-│
-├── public/              # Static assets
+├── public/              # Static assets (favicons, manifest)
 ├── src/
-│   ├── components/      # Reusable UI components
-│   ├── pages/           # Application pages (Home, Movie Details)
-│   ├── services/        # API calls and helpers
-│   ├── styles/          # Styling files
-│   ├── App.jsx          # Root component
-│   └── main.jsx         # Application entry point
-│
-├── static.json          # Render SPA routing configuration
-├── package.json
-├── vite.config.js
-└── .env                 # Environment variables (API key)
-🛠️ Installation & Setup
-1. Clone the repository
+│   ├── components/      # Reusable UI components (MovieCard, Navbar)
+│   ├── pages/           # Page views (Home, MovieDetails, SearchResults)
+│   ├── services/        # API service functions (fetch calls)
+│   ├── styles/          # Global styles and theme variables
+│   ├── App.jsx          # Main application component & routing logic
+│   └── main.jsx         # Entry point (DOM rendering)
+├── .env                 # Environment variables (API Key)
+├── package.json         # Dependencies and scripts
+└── vite.config.js       # Vite configuration
+🏁 Getting Started
+Follow these instructions to set up the project locally.
+
+1. Prerequisites
+Ensure you have Node.js (v14 or higher) and npm installed.
+
+2. Clone the Repository
 Bash
 git clone [https://github.com/ash161204/movie-explorer.git](https://github.com/ash161204/movie-explorer.git)
 cd movie-explorer
-2. Install dependencies
+3. Install Dependencies
 Bash
 npm install
-3. Configure API key
-Create a .env file in the project root:
+4. Environment Configuration
+Create a .env file in the root directory to store your API key.
 
 Code snippet
-VITE_API_KEY=your_api_key_here
-Replace your_api_key_here with a valid API key from The Movie Database (TMDB).
+VITE_API_KEY=your_tmdb_api_key_here
+Note: You can get a free API key by registering at The Movie Database (TMDB).
 
-▶️ Running the App
+5. Run the Application
 Start the development server:
 
 Bash
 npm run dev
-Open your browser and visit:
+Open your browser and navigate to http://localhost:5173.
 
-http://localhost:5173
-(Port may vary based on configuration.)
+🚀 Deployment
+This project is optimized for deployment on platforms like Vercel, Netlify, or Render.
 
-📦 Production Build
-To create a production-ready build:
+Build for Production:
 
 Bash
 npm run build
-The compiled assets will be generated in the dist/ directory and can be deployed to any static hosting platform such as Render, Netlify, Vercel, or GitHub Pages.
-
-🧪 Testing
-Testing is not configured by default.
-
-Optional tools you may integrate:
-
-Jest + React Testing Library
-
-Playwright or Cypress for end-to-end testing
+The output will be in the dist/ folder, ready to be served by any static host.
 
 🤝 Contributing
-Contributions are welcome.
+Contributions are welcome! If you have suggestions for improvements or bug fixes:
 
-Fork the repository
+Fork the repository.
 
-Create a new feature branch
+Create a new branch (git checkout -b feature-name).
 
-Commit your changes
+Commit your changes.
 
-Open a pull request
+Push to the branch and open a Pull Request.
 
-📚 Acknowledgements
-This product uses the TMDB API but is not endorsed or certified by TMDB.
-
-Movie data, posters, and metadata are provided by The Movie Database (TMDB).
-
-Built using React and Vite.
+📄 License
+This project is open-source and available under the MIT License.
 
 👤 Author
-Developed by Ashish Feel free to connect or contribute to the project.
+Ash - GitHub: @ash161204
+
+LinkedIn: [Ashish Medithe](https://www.linkedin.com/in/ashish-medithe-904634231/) 
+
+Built with ❤️ using React & Vite
